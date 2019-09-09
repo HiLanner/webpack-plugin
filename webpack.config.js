@@ -10,6 +10,7 @@ const mySyncLoopHook = require('./plugins/SyncLoopHook')
 const myAsyncParallelHook = require('./plugins/asyncParallelHook')
 const myAsyncParallelBailHook = require('./plugins/asyncParallelBailHook')
 const myAsyncSeriesHook = require('./plugins/asyncSeriesHook')
+const myAsyncSeriesBailHook = require('./plugins/asyncSeriesBailHook')
 
 module.exports = {
   mode: 'development',
@@ -61,7 +62,8 @@ module.exports = {
     // new mySyncWaterfallHookPlugin()
     // new myAsyncParallelHook(),
     // new myAsyncParallelBailHook()
-    new myAsyncSeriesHook()
+    // new myAsyncSeriesHook()
+    new myAsyncSeriesBailHook()
   ],
 };
 
